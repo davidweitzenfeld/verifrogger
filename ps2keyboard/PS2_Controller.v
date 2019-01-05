@@ -1,3 +1,6 @@
+`include "Altera_UP_PS2_Data_In.v"
+`include "Altera_UP_PS2_Command_Out.v"
+
 /*****************************************************************************
  *                                                                           *
  * Module:       Altera_UP_PS2                                               *

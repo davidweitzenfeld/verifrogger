@@ -1,3 +1,5 @@
+`include "PS2_Controller.v"
+
 /**
  * #############
  * INSTRUCTIONS

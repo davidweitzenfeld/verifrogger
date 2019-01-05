@@ -85,9 +85,9 @@ module numchar_ram_module (
     assign char1 = numchar < 10 ? 0 : numchar / 10;
     assign char2 = numchar - 10 * char1;
 
-    wire [7:0] x_offset;
-    assign x_offset = x <= 7 ? char1 * 7 : char2 * 7;
-
+    wire [7:0] x_offset, x_rel;
+    assign x_offset = x < 7 ? char1 * 7 : (char2 - 1) * 7;
+	 
     // ### SRM containing each numerical character. ###
 
     sprite_ram_module #(
